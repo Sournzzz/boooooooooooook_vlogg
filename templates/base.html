@@ -1,0 +1,13 @@
+<html>
+    <head>
+        {% if title %}
+        <title>{{ title }} - Entelekia</title>
+        {% else %}
+        <title>Bienvenidooooos</title>
+        {% endif %}
+    </head>
+    <body>
+        <div>Entelekia: 
+            <a href="{{ url_for('home') }}">Home</a>
+        </div>
+    {% block content %}{% endblock %} 
