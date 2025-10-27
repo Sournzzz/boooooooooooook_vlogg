@@ -8,6 +8,9 @@
     </head>
     <body>
         <div>Entelekia: 
-            <a href="{{ url_for('home') }}">Home</a>
+            <a href="{{ url_for('index') }}">Home</a>
+            <a href="{{ url_for('booksearch') }}">Search</a>
         </div>
-    {% block content %}{% endblock %} 
+    {% block content %}{% endblock %}
+    </body>
+</html> 

@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    <h1>Book Search</h1>
+    <form method="POST">
+        <div>
+            {{ form.hidden_tag() }}
+            {{ form.titlebook.label }}
+            {{ form.titlebook(size=32) }}<br>
+            
+            {{ form.author.label }}
+            {{ form.author(size=32) }}<br>
+
+            {{ form.submit }}
+        
+        </div>
+    </form> 
+
+{% endblock %}
